@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 </head>
 <body>
  <div class="navbar container">
@@ -26,7 +27,7 @@
     <a href="#" class="nav__link">Работы</a>
   </li>
   <li class="item__list">
-    <a href="#" class="nav__link">Контакты</a>
+    <a href="#" class="nav__link">Обратная связь</a>
   </li>
 </ul>
  </nav>
@@ -39,22 +40,78 @@
   <h2 class="section-heading">Услуги и цены</h2>
   <div class="works">
     <div class="work-block">
-  <img src="https://via.placeholder.com/150" alt="" class="work">
-<p class="work-text">Ремонт одежды из трикотажа</p>
+  <img src="images/trikotaj.jpg" alt="" class="work">
+<p class="work-text">Пошив, ремонт одежды из трикотажа</p>
 </div>
 <div class="work-block">
-  <img src="https://via.placeholder.com/150" alt="" class="work">
-  <p class="work-text">Ремонт одежды из ткани</p>
+  <img src="images/tkani.jpg" alt="" class="work">
+  <p class="work-text">Пошив, ремонт одежды из ткани</p>
 </div>
 <div class="work-block">
-  <img src="https://via.placeholder.com/150" alt="" class="work">
-<p class="work-text">Ремонт одежды из кожи</p>
-</div>
-<div class="work-block">
-  <img src="https://via.placeholder.com/150" alt="" class="work">
+  <img src="images/shtory.jpg" alt="" class="work">
 <p class="work-text">Пошив штор</p>
 </div>
 </div>
 </section>
+<section class="gallery container">
+<h2 class="section-heading">Работы</h2>
+<div class="gallery-list">
+  <a href="https://via.placeholder.com/300" class="gallery-item">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="https://via.placeholder.com/300" alt="alt">
+  </a>
+  <a href="https://via.placeholder.com/300" class="gallery-item">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="https://via.placeholder.com/300" alt="alt">
+  </a>
+  <a href="https://via.placeholder.com/300" class="gallery-item">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="https://via.placeholder.com/300" alt="alt">
+  </a>
+  <a href="https://via.placeholder.com/300" class="gallery-item">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="https://via.placeholder.com/300" alt="alt">
+  </a>
+  <a href="https://via.placeholder.com/300" class="gallery-item">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="https://via.placeholder.com/300" alt="alt">
+  </a>
+  <a href="https://via.placeholder.com/300" class="gallery-item">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="https://via.placeholder.com/300" alt="alt">
+  </a>
+  <a href="https://via.placeholder.com/300" class="gallery-item">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="https://via.placeholder.com/300" alt="alt">
+  </a>
+  <a href="https://via.placeholder.com/300" class="gallery-item">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="https://via.placeholder.com/300" alt="alt">
+  </a>
+  <a href="https://via.placeholder.com/300" class="gallery-item">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="https://via.placeholder.com/300" alt="alt">
+  </a>
+</div>
+</section>
+
+<section class="feedback container">
+  <h2 class="section-heading">Обратная связь</h2>
+</section>
 </body>
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<script>
+$(".gallery-list").magnificPopup({
+  delegate: "a",
+  type: "image",
+  gallery: {
+    enabled: true
+  }
+});
+</script>
 </html>
+
+
