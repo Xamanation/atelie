@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" 
+crossorigin>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 </head>
 <body>
  <div class="navbar container">
@@ -37,7 +39,7 @@
 
 </header>
 <section class="price container">
-  <h2 class="section-heading">Услуги и цены</h2>
+  <h2 class="section-heading" data-aos="fade-right">Услуги и цены</h2>
   <div class="works">
     <div class="work-block">
   <img src="images/trikotaj.jpg" alt="" class="work">
@@ -54,52 +56,103 @@
 </div>
 </section>
 <section class="gallery container">
-<h2 class="section-heading">Работы</h2>
+<h2 class="section-heading" data-aos="fade-right">Работы</h2>
 <div class="gallery-list">
-  <a href="https://via.placeholder.com/300" class="gallery-item">
+  <a href="images/1.jpeg" class="gallery-item" data-aos="flip-right">
     <div class="gallery-item-hover">Посмотреть</div>
-    <img src="https://via.placeholder.com/300" alt="alt">
+    <img src="images/1.jpeg" alt="alt">
   </a>
-  <a href="https://via.placeholder.com/300" class="gallery-item">
+  <a href="images/2.jpeg" class="gallery-item" data-aos="flip-right">
     <div class="gallery-item-hover">Посмотреть</div>
-    <img src="https://via.placeholder.com/300" alt="alt">
+    <img src="images/2.jpeg" alt="alt">
   </a>
-  <a href="https://via.placeholder.com/300" class="gallery-item">
+  <a href="images/3.jpeg" class="gallery-item" data-aos="flip-right">
     <div class="gallery-item-hover">Посмотреть</div>
-    <img src="https://via.placeholder.com/300" alt="alt">
+    <img src="images/3.jpeg" alt="alt">
   </a>
-  <a href="https://via.placeholder.com/300" class="gallery-item">
+  <a href="images/4.jpeg" class="gallery-item" data-aos="flip-right">
     <div class="gallery-item-hover">Посмотреть</div>
-    <img src="https://via.placeholder.com/300" alt="alt">
+    <img src="images/4.jpeg" alt="alt">
   </a>
-  <a href="https://via.placeholder.com/300" class="gallery-item">
+  <a href="images/5.jpeg" class="gallery-item" data-aos="flip-left">
     <div class="gallery-item-hover">Посмотреть</div>
-    <img src="https://via.placeholder.com/300" alt="alt">
+    <img src="images/5.jpeg" alt="alt">
   </a>
-  <a href="https://via.placeholder.com/300" class="gallery-item">
+  <a href="images/6.jpeg" class="gallery-item" data-aos="flip-left">
     <div class="gallery-item-hover">Посмотреть</div>
-    <img src="https://via.placeholder.com/300" alt="alt">
+    <img src="images/6.jpeg" alt="alt">
   </a>
-  <a href="https://via.placeholder.com/300" class="gallery-item">
+  <a href="images/7.jpeg" class="gallery-item" data-aos="flip-left">
     <div class="gallery-item-hover">Посмотреть</div>
-    <img src="https://via.placeholder.com/300" alt="alt">
+    <img src="images/7.jpeg" alt="alt">
   </a>
-  <a href="https://via.placeholder.com/300" class="gallery-item">
+  <a href="images/8.jpeg" class="gallery-item" data-aos="flip-left">
     <div class="gallery-item-hover">Посмотреть</div>
-    <img src="https://via.placeholder.com/300" alt="alt">
+    <img src="images/8.jpeg" alt="alt">
   </a>
-  <a href="https://via.placeholder.com/300" class="gallery-item">
+  <a href="images/9.jpeg" class="gallery-item" data-aos="flip-right">
     <div class="gallery-item-hover">Посмотреть</div>
-    <img src="https://via.placeholder.com/300" alt="alt">
+    <img src="images/9.jpeg" alt="alt">
+  </a>
+  <a href="images/10.jpeg" class="gallery-item" data-aos="flip-right">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="images/10.jpeg" alt="alt">
+  </a>
+  <a href="images/11.jpeg" class="gallery-item" data-aos="flip-right">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="images/11.jpeg" alt="alt">
+  </a>
+  <a href="images/12.jpeg" class="gallery-item" data-aos="flip-right">
+    <div class="gallery-item-hover">Посмотреть</div>
+    <img src="images/12.jpeg" alt="alt">
   </a>
 </div>
 </section>
 
 <section class="feedback container">
-  <h2 class="section-heading">Обратная связь</h2>
-</section>
+  <h2 class="section-heading" data-aos="fade-right">Обратная связь</h2>
+  <div class="feedback-discription">
+    <div class="contact">Хотите обсудить заказ?<br/> По всем вопросам можно обращаться в WhatsApp и Telegram</div>
+    <div class="feedback-botton">
+      <a href="https://wa.me/79126124305" target="_blank" class="button">
+      <div class="whatsapp">
+        <p class="words"> Написать </p>
+      <img src="/images/whatsapp logo.svg" alt="whatlogo" class="whatsapp-logo">
+      </div>
+    </a>
+    <a href="" target="_blank" class="button">
+      <div class="telegram">
+        <p class="words"> Написать </p>
+        <img src="/images/telegram logo.svg" alt="telegram-logo" class="telegram-logo">
+      </div>
+    </a>
+    </div>
+  </div>
+ </section>
 </body>
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+  (function () {
+      var options = {
+          vkontakte: "id120700067", // VKontakte page name
+          whatsapp: "+79126124305", // WhatsApp number
+          call_to_action: "Обсудить заказ", // Call to action
+          button_color: "#5e8bc7", // Color of button
+          position: "right", // Position may be 'right' or 'left'
+          order: "vkontakte,whatsapp", // Order of buttons
+      };
+      var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+<!-- /GetButton.io widget -->
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
 crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
