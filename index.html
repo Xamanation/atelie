@@ -13,10 +13,11 @@ crossorigin>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
- <div class="navbar container">
-  <img src="images/platie.svg" alt="logo">
+   <div class="navbar container">
+  <img src="images/platie.svg" alt="logo"  class="logo1">
  <nav class="navigation">
 <ul class="nav__list">
   <li class="item__list">
@@ -39,20 +40,36 @@ crossorigin>
 
 </header>
 <section class="price container">
-  <h2 class="section-heading" data-aos="fade-right">Услуги и цены</h2>
-  <div class="works">
+      <h2 class="section-heading" data-aos="fade-right">Услуги и цены</h2>
+<div class="works">
+    <a href="#ex1" rel="modal:open" class="none-decor">
     <div class="work-block">
-  <img src="images/trikotaj.jpg" alt="" class="work">
-<p class="work-text">Пошив, ремонт одежды из трикотажа</p>
-</div>
-<div class="work-block">
   <img src="images/tkani.jpg" alt="" class="work">
-  <p class="work-text">Пошив, ремонт одежды из ткани</p>
+<p class="work-text">Дизайн и моделирование одежды</p>
 </div>
+</a>
+<div id="ex1" class="modal">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate, ab pariatur vel vitae vero. Laudantium perferendis quos voluptate ipsa, dolore fuga ipsam voluptatum dolorum pariatur debitis id quaerat impedit!
+    </p>
+  </div>
+  <a href="#ex2" rel="modal:open" class="none-decor">
+<div class="work-block">
+  <img src="images/trikotaj.jpg" alt="" class="work">
+  <p class="work-text">Пошив и ремонт одежды из ткани и трикотажа</p>
+</div>
+</a>
+<div id="ex2" class="modal">
+  <p>Пупа лупа</p>
+  </div>
+  <a href="#ex3" rel="modal:open" class="none-decor">
 <div class="work-block">
   <img src="images/shtory.jpg" alt="" class="work">
-<p class="work-text">Пошив штор</p>
+<p class="work-text">Текстильное оформление дома</p>
 </div>
+</a>
+<div id="ex3" class="modal">
+  <p>Текстильное оформление дома, покрывала подушки и шторы</p>
+  </div>
 </div>
 </section>
 <section class="gallery container">
@@ -104,7 +121,7 @@ crossorigin>
   </a>
   <a href="images/12.jpeg" class="gallery-item" data-aos="flip-right">
     <div class="gallery-item-hover">Посмотреть</div>
-    <img src="images/12.jpeg" alt="alt">
+    <img src="images/12.jpeg" alt="alt"> 
   </a>
 </div>
 </section>
@@ -112,8 +129,11 @@ crossorigin>
 <section class="feedback container">
   <h2 class="section-heading" data-aos="fade-right">Обратная связь</h2>
   <div class="feedback-discription">
-    <div class="contact">Хотите обсудить заказ?<br/> По всем вопросам можно обращаться в WhatsApp и Telegram</div>
-    <div class="feedback-botton">
+    <div class="discription">
+    <div class="contact">
+      <p class="zakaz">Хотите обсудить заказ?<br/> По всем вопросам можно обращаться в WhatsApp и Telegram</p> 
+    </div>
+    <div class="feedback-button">
       <a href="https://wa.me/79126124305" target="_blank" class="button">
       <div class="whatsapp">
         <p class="words"> Написать </p>
@@ -128,8 +148,12 @@ crossorigin>
     </a>
     </div>
   </div>
- </section>
-</body>
+    <div class="karta">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6d5c25e4ec775b5251edd3bafe6d7fa479b58bf0f8d68b23b07a44f2ba40f1f2&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+  </div>
+   </section>
+  </body>
 <script src="js/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -165,6 +189,7 @@ $(".gallery-list").magnificPopup({
   }
 });
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 </html>
 
 
