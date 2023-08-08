@@ -13,10 +13,11 @@ body{
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: auto;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 
@@ -53,9 +54,7 @@ body{
     background-color: #9eb9dd; /* Цвет подчеркивания при исчезании линии*/
     transition: width 0.5s; /* Время эффекта */
 }
-.header {
-  margin-bottom: 200px;
-}
+
 .nav__link:hover:after {
 	content: "";
     width: 100%;
@@ -68,10 +67,122 @@ body{
     transition: width 0.5s;  /* Время эффекта */
 }
 
+.header {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
 
+.heading  {
+position: absolute;
+padding-left: 100px;
+margin: 20px 0 30px 20px;
+font-style: normal;
+font-weight: 40;
+font-size: 35px;
+line-height: 29px;
+color: #000000;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+.about {
+  display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 0px 200px 30px 200px;
+}
+ .about-description {
+  padding: 10px 10px 10px 10px;
+   overflow: hidden;
+   width: 50%;
+   border-radius: 50px;
+   background-color: #f0f0f3;
+   box-shadow: 10px 10px 21px #d3d3d6,
+               -10px -10px 21px #fff;  
+ }
+
+ .about-description ul {
+	list-style-type: none; 
+	counter-reset: num;
+	position: relative;	    
+	margin: 0 0 0 80px;
+	padding: 15px 0 5px 0;
+	font-size: 20px;
+}
+
+.about-description ul li {
+	position: relative;	
+	margin: 0 0 0 0;
+	padding: 0 0 30px 0;
+	line-height: 1.4;
+}
+
+.about-description ul li:after {
+  content: '✓'; 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: -45px;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	background: #6e95cb;
+	color: #ffffff;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 50%;
+	border: 1px solid #6e95cb;
+}
+
+/* Вертикальная линия */
+
+.about-description ul:before {
+	content: ''; 
+	position: absolute;
+	top: 15px;
+	bottom: 64px;
+	left: -30px;    
+	width: 1px;
+	border-left: 2px solid #6e95cb;
+}
+
+/* Скрытие линии у последнего li */
+
+.about-description ul li:last-child:before {
+	content: ''; 
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -38px;
+	background: #fff;
+  }
+
+  .about-description ul li:last-child {
+    padding-bottom: 5px;
+  }
+.about-block {
+  display: flex;
+  justify-content: space-around
+}
+.about-block-time {
+  display: flex;
+  align-items: center;
+}
+.about-time-icon {
+  margin: 0 10px 5px 0;
+}
+.about-img {
+width: 600px;
+height: 700px;
+}
 
 .section-heading {
+  display: block;
+  max-width: 800px;
   padding: 0 8px;
   margin-bottom: 10px;
   margin-left: 50px;
@@ -79,27 +190,27 @@ body{
   font-size: 48px;
   line-height: 125%;
   letter-spacing: -0.03em;
-  background-color: #FFFFFF;
-  color: #608cc7;
+    color: #608cc7;
+  
   }
 
   .section-heading:before {
-    display: block;
+  display: block;
   margin-top: 10px;
   content: "";
   border-bottom: 2px solid #608cc7;
-  right: 748px;
-  width: 10%;
+  width: 51%;
   height: 0.5em;
   position: absolute;
   margin-left: calc(-50% - 10px);
 }
 
 .section-heading::after {
+  float: right;
   margin-top: 10px;
   content: "";
   border-bottom: 2px solid #608cc7;
-  width: 40%;
+  width: 100%;
   height: 0.5em;
   position: absolute;
   top: 0px;
@@ -107,6 +218,7 @@ body{
 }
 
  .works {
+  margin: 30px 40px 0 40px;
   max-width: 1000px;
   display: flex;
   align-items:flex-start; 
@@ -178,7 +290,7 @@ h2.title:after{
   flex-wrap: wrap;
   overflow: hidden;
   font-size: 0;
-  margin-top: 30px;
+  margin: 30px 40px 0 40px;
   border-radius: 50px;
   background-color: #f0f0f3;
   box-shadow: 10px 10px 21px #d3d3d6,
@@ -244,8 +356,8 @@ h2.title:after{
 .feedback-discription {
  display: flex;
  align-items: center;
- justify-content: flex-start;
- width: 100%;
+ justify-content: center;
+ margin: 30px 40px 20px 40px;
  height: 300px;
  border-radius: 50px;
  background-color: #f0f0f3;
@@ -318,7 +430,6 @@ color: #111111;
 }
 
 .karta {
-  margin-right: 20px;
   width: auto;
   height: auto;
   background-color: #f0f0f3;
